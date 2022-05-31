@@ -1,47 +1,36 @@
 variable "location" {
   #type        = string
- default     = "north europe"
+ default     = "west europe"
   description = "demo 1"
 }
-
 variable "name" {
   #type        = list
-  default = "demo5"
+  default = ["Demo01","Demo02","Demo03","Demo04"]
   description = "demo 1"
 }
 
-variable "vnetname" {
-  #type        = list
-  default = "tempvnet"
-  description = "demo 1"
-}
-
-variable "vmname" {
-  #type        = list
-  default = ["vm1", "vm2"]
-  description = "demo 1"
-}
-
-variable "osdisk" {
-  #type        = list
-  default = ["tempdisk1", "tempdisk2","tempdisk3"]
-  description = "demo 1"
-}
-
-variable "nic" {
-  #type        = list
-  default = ["nic1", "nic2"]
-  description = "demo 1"
-}
-
-variable "ipconfiguration" {
-  #type        = list
-  default = ["ip1", "ip2"]
-  description = "demo 1"
-}
-
-/*variable "subnet" {
+/*variable "location1" {
   type        = string
-  default = ["subnet1","subnet2"]
-  description = "demo 1"
+  default     = "west europe"
+  description = "demo 2"
+}
+
+variable "tags" {
+  #type        = string
+  default     =  {
+      Enviromnment = "Dev"
+      Cost_Center = "Prod"
+  }
+   
+  description = "test"
+}
+
+variable "tags1" {
+  #type        = string
+  default     =  {
+      Enviromnment = "Dev1"
+      Cost_Center ="Prod1"
+  }
+   
+  description = "test"
 }*/
